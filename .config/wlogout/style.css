@@ -1,0 +1,82 @@
+@import url("$HOME/.config/wlogout/colors.css");
+
+* {
+    background-image: none;
+    font-size: ${font_size}px;
+}
+
+window {
+    background-color: @window_bg;
+}
+
+button {
+    color: @button_fg;
+    background-color: @button_bg;
+    outline-style: none;
+    border: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus {
+    background-color: @button_focus_bg;
+    background-size: 20%;
+}
+
+button:hover {
+    background-color: @button_hover_bg;
+    background-size: 25%;
+    border-radius: ${active_rad}px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682);
+}
+
+button:hover#shutdown {
+    border-radius: ${active_rad}px ${active_rad}px 0px ${active_rad}px;
+    margin: ${hover_y}px 0px 0px ${hover_x}px;
+}
+
+button:hover#lock {
+    border-radius: ${active_rad}px 0px ${active_rad}px ${active_rad}px;
+    margin: 0px 0px ${hover_y}px ${hover_x}px;
+}
+
+button:hover#reboot {
+    border-radius: ${active_rad}px ${active_rad}px ${active_rad}px 0px;
+    margin: ${hover_y}px ${hover_x}px 0px 0px;
+}
+
+button:hover#logout {
+    border-radius: 0px ${active_rad}px ${active_rad}px ${active_rad}px;
+    margin: 0px ${hover_x}px ${hover_y}px 0px;
+}
+
+#shutdown {
+    background-image: url("$HOME/.config/wlogout/icons/shutdown.png");
+    border-radius: ${button_rad}px 0px 0px 0px;
+    margin: ${margin_y}px 0px 0px ${margin_x}px;
+}
+
+#lock {
+    background-image: url("$HOME/.config/wlogout/icons/lock.png");
+    border-radius: 0px 0px 0px ${button_rad}px;
+    margin: 0px 0px ${margin_y}px ${margin_x}px;
+}
+
+#reboot {
+    background-image: url("$HOME/.config/wlogout/icons/reboot.png");
+    border-radius: 0px ${button_rad}px 0px 0px;
+    margin: ${margin_y}px ${margin_x}px 0px 0px;
+}
+
+#logout {
+    background-image: url("$HOME/.config/wlogout/icons/logout.png");
+    border-radius: 0px 0px ${button_rad}px 0px;
+    margin: 0px ${margin_x}px ${margin_y}px 0px;
+}
