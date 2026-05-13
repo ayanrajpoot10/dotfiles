@@ -1,0 +1,6 @@
+terminal    = "kitty"
+fileManager = "thunar"
+menu        = "rofi -show drun"
+browser     = "brave"
+assistant   = "brave --app=https://chatgpt.com"
+powermenu   = "~/.config/wlogout/wlogout.sh"
