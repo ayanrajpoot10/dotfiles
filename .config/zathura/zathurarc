@@ -1,0 +1,43 @@
+# THEME
+set recolor true
+set recolor-darkcolor "#cdd6f4"
+set recolor-lightcolor "#1e1e2e"
+set recolor-keephue true
+set recolor-reverse-video true
+
+set highlight-color "rgba(203,166,247,0.45)"
+set highlight-active-color "rgba(137,180,250,0.55)"
+
+# UI
+set guioptions none
+set font "JetBrainsMono Nerd Font 11"
+
+set statusbar-basename true
+set window-title-basename true
+set statusbar-home-tilde true
+
+# OPENING & VIEW
+set adjust-open "width"
+set vertical-center true
+set zoom-center true
+
+# SCROLLING
+set scroll-step 150
+set scroll-page-aware true
+set scroll-full-overlap 0.15
+
+# PERFORMANCE
+set page-cache-size 5
+set render-loading false
+
+# SEARCH
+set incremental-search true
+set abort-clear-search true
+
+# HISTORY
+set database "sqlite"
+set continuous-hist-save true
+
+# CLIPBOARD
+set selection-clipboard clipboard
+set selection-notification false
