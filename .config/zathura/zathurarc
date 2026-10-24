@@ -5,6 +5,22 @@ set recolor-lightcolor "#1e1e2e"
 set recolor-keephue true
 set recolor-reverse-video true
 
+set default-bg "#1e1e2e"
+set index-bg "#1e1e2e"
+set statusbar-bg "#181825"
+set completion-bg "#181825"
+set inputbar-bg "#181825"
+set completion-group-bg "#11111b"
+set completion-highlight-bg "#cba6f7"
+set index-active-bg "#cba6f7"
+set default-fg "#cdd6f4"
+set index-fg "#cdd6f4"
+set statusbar-fg "#cdd6f4"
+set completion-fg "#cdd6f4"
+set inputbar-fg "#cdd6f4"
+set completion-group-fg "#bac2de"
+set index-active-fg "#313244"
+
 set highlight-color "rgba(203,166,247,0.45)"
 set highlight-active-color "rgba(137,180,250,0.55)"
 
@@ -17,7 +33,7 @@ set window-title-basename true
 set statusbar-home-tilde true
 
 # OPENING & VIEW
-set adjust-open "width"
+set adjust-open "best-fit"
 set vertical-center true
 set zoom-center true
 
@@ -36,8 +52,12 @@ set abort-clear-search true
 
 # HISTORY
 set database "sqlite"
-set continuous-hist-save true
 
 # CLIPBOARD
 set selection-clipboard clipboard
 set selection-notification false
+
+set page-v-padding 0
+
+map j scroll smooth-down
+map k scroll smooth-up
