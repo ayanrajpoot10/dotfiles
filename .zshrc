@@ -7,6 +7,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
 export EDITOR='nvim'
+export MANPAGER='nvim +Man!'
 
 # Theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
